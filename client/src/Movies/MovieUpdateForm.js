@@ -43,8 +43,7 @@ const MovieUpdateForm = props => {
         movie.stars != "" &&
         movie.metascore != ""
       ) {
-        console.log(movie);
-        console.log("submit handler");
+       
         if (typeof movie.stars == "string") {
           const stars = movie.stars.split(",");
   
