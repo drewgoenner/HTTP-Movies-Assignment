@@ -63,19 +63,8 @@ const MovieUpdateForm = props => {
             .catch(err => {
               console.log(err);
             });
-        } else {
-          axios
-            .put(
-              `http://localhost:5000/api/movies/${props.match.params.id}`,
-              movie
-            )
-            .then(res => {
-              props.history.push("/");
-            })
-            .catch(err => {
-              console.log(err);
-            });
-        }
+         }
+       
       }
     };
     return (
